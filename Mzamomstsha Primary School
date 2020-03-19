@@ -2,121 +2,59 @@
 
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Mzamomtsha Primary School</title>
-    <style>
-    h1{color:gold;
-     font-style: italic;}
+        <title>Mzamomstsha Home</title>    
+        <style>
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+            }
 
-    .Animation1{
-       font: bold;
-       font-size: 35px;
-       font-style: normal;
-       color:gold;
-       position:relative;
-       animation-name:Part1;
-       animation-duration: 30s;
-    }
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                font-size: medium;
+                padding: 5px 20px;
+                text-decoration: none;
+            }
 
-    .Animation2{
-       font: bold;
-       font-size: 35px;
-       font-style: normal;
-       color:gold;
-       position:relative;
-       animation-name:Part2;
-       animation-duration: 30s;
-    }
-    .content {
-      position: fixed;
-      top: 40%;
-      width: auto;
-      padding: 20px;
-      z-index: 1;
-      top: 0%;
-      flex-wrap: wrap;
+            .navbar a.active {
+                background-color: #666;
+                color: white;
+            }
 
-    }
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
 
-    #myVideo {
-      position: fixed;
-      min-width: 100%;
-      min-height:100%;
-      z-index: -1;
-    }
-
-    @keyframes Part1 {  
-        from{font: outline;; left:0px; top:0px;}  
-        to{font: outline;; left:500px; top:0px;}  
-    }  
-
-    @keyframes Part2 {  
-        from{font: outline;; left:1000px; top:0px;}  
-        to{font: outline;; left:500px; top:0px;}  
-    }
-    .content h1{text-align: center; 
-       font-size: 70px;}
-
-       div.scrollmenu {
-      background-color: #333;
-      overflow: auto;
-      white-space: nowrap;
-    }
-
-    div.scrollmenu a {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px;
-      text-decoration: none;
-    }
-    p{
-        bottom:20%;
-    }
-    div.scrollmenu a:hover {
-      background-color: #777;
-    }
-
-
-    </style>
-  </head>
-  
-  <body>
-    <header style="background-color: rgb(0, 69, 110);
-                    text-align: center;
-                    font-size: xx-large;
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: rgb(199, 186, 0);">
-        <br>
-        <img src="https://cdn-cms.f-static.net/uploads/2078632/400_crop_5cde754fd8528_5cde753d05c73.png"
-        alt="School Logo" width="250" height="200">
-        <br>Mzamomstsha Primary School<br>
-        <button><a href="./Welcome.html">HOME</a></button>
-        <button><a href="./Event.html">EVENTS</a></button>
-        <button><a href="./News.html">NEWS/BLOG</a></button>
-        <button><a href="./FAQ.html">FAQ</a></button>
-        <button><a href="./AboutUs.html">ABOUT US</a></button>
-        <button><a href="./ContactUs.html">CONTACT US</a></button>
-        <br><br>
-    </header>
+        </style>
+    </head>
     
-    <div class="scrollmenu">
-      <a href="Mzamomtsha.html">Home</a>
-      <a href="Enroll.html">News</a>
-      <a href="#contact">Enroll</a>
-      <a href="#about">About</a>
-      ...
-    </div>  
+    <body>
+        
+        <header style="background-color: rgb(0, 69, 110); 
+                        text-align: center; 
+                        font-size: xx-large;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: rgb(199, 186, 0);">
+            <br>
+            <img src="https://cdn-cms.f-static.net/uploads/2078632/400_crop_5cde754fd8528_5cde753d05c73.png" 
+            alt="School Logo" width="250" height="200">
+            <br>Mzamomstsha Primary School<br> 
 
-    <video autoplay muted loop id="myVideo">
-       <source src="Space.mp4" type="video/mp4">
-    </video> 
-
-    <div class="content">  
-        <center><img src="Logo.png" alt="School Flag" height="200" width="200" ></center>
-        <h1><strength>Welcome to the Mzamomtsha School Website</strength></h1>
-        <div class="Animation1"><p><bold>SCHOOL OF </bold></p></div>
-        <div class="Animation2"><p><bold>THE FUTURE </bold></p></div>
-    </div>
+            <div class="navbar">
+                <a href="./Welcome.html" class="active">HOME</a>
+                <a href="./Event.html">EVENTS</a>
+                <a href="./News.html">NEWS/BLOG</a>
+                <a href="./FAQ.html">FAQ</a>
+                <a href="./AboutUs.html">ABOUT US</a>
+                <a href="./ContactUs.html">CONTACT US</a>
+            </div>        
+        </header>
   </body>
 </html>
